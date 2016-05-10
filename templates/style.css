@@ -1,0 +1,195 @@
+/* On défini les styles globaux à notre site ; généralement la police de caractère */
+body {
+    font-family:verdana;
+    font-size:12px;
+
+    /* On défini une taille max pour notre site et on le centre au milieu de la page */
+    max-width:1200px;margin:auto;
+}
+nav {
+    clear:both;
+    width:100%;
+    text-align:center;
+}
+nav ul {
+    padding:0px;
+}
+nav li {
+    list-style-type: none;
+    display:inline-block;
+    padding:0px 10px;
+}
+button, input[type=submit] {
+    background: none repeat scroll 0 0 #f60;
+    border: 0 none;
+    color:white;
+    padding:5px;
+    border-radius: 5px;
+    font-size:12px;
+    text-transform: uppercase;font-weight: bold;
+}
+datalist {
+    display:none;	/* pour les navigateurs ne supportant pas datalist */
+}
+
+/* Classes utiles */
+.important {font-size:15px;}
+
+header img {margin:5px;}
+header form {
+    float:right;
+    background: none repeat scroll 0 0 #e3dccd;
+    border-radius: 0px 0px 12px 12px;
+    padding:10px;
+}
+header form div {display:inline-block;}
+header ul {
+    font-family:verdana;
+    font-size:14px;
+    margin: 20px 0px;
+}
+header nav li {
+    border-left: 1px solid #999;
+}
+header nav li:first-child {
+    border-left: none;
+}
+
+h3 {margin:5px 0px;padding:0px;}
+
+#searchForm {
+    background: none repeat scroll 0 0 #e3dccd;
+    border-radius: 12px;
+    margin:10px;text-align:center;
+    min-height:60px;
+    padding:10px;
+}
+#searchForm input, #searchForm select {
+    width:20%;
+}
+#searchForm input[type=submit] {
+    margin-top:10px;
+    float:right;
+}
+
+#mainContent {
+    margin: 25px 0px;
+}
+
+section, aside {
+    display:inline-block;
+    vertical-align:top;
+}
+section {width:76%;}
+aside {width:20%;}
+
+aside {
+    padding:10px;
+    text-align:center;
+    background: none repeat scroll 0 0 #e3dccd;
+}
+aside p {margin-top:7px;}
+aside .title {
+    background: none repeat scroll 0 0 #f60;
+    color: #fff;
+    font-weight: bold;
+    margin:10px;padding:10px;
+}
+aside article.annonce-side {
+    height: 150px;
+    background-color:white;
+    margin:10px;padding:10px;
+}
+
+article img {max-width:95%;}
+
+article.annonce {clear:both;min-height:125px;cursor:pointer;padding:10px;}
+article.annonce:hover {background: none repeat scroll 0 0 #eaebf0;}
+article.annonce div {display:inline-block;}
+article.annonce .date {width:20%;min-width:100px;text-align:center;}
+article.annonce .image {width:20%;min-width:100px;text-align:center;margin:0px 10px;}
+article.annonce .description {padding:5px;}
+
+
+footer {
+    clear:both;
+    padding:20px 0px;
+    text-align: center;
+    color:grey;
+}
+
+@media screen and (max-width:992px) {
+    body {background-color:blue;}
+}
+
+@media screen and (max-width:625px) {
+    body {background-color:yellow;}
+    header {text-align:center;}
+    header form {display:none;}
+    #searchForm {
+        text-align:center;
+    }
+    #searchForm input, #searchForm select {
+        display:block;
+        width:80%;
+        margin:5px auto;
+        box-sizing: border-box;
+    }
+    #searchForm input[type=submit] {
+        float:none;
+    }
+
+    section, aside {
+        float:none;
+        display:block;
+        margin:auto;
+        width:90%;
+    }
+
+    article.annonce div {float:none;margin:auto;}
+    article.annonce .date, article.annonce .image,
+    article.annonce .description {width:90%;margin:auto;text-align:center;}
+
+}
+
+#annonce  {
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 400px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 2em;
+}
+.label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    height: 150px;
+    width : 400px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+#contactform  {
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 400px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
