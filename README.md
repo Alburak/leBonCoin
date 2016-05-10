@@ -5,3 +5,6 @@ Clique le  crayon icône dans le coin supérieur droit de l'affichage des fichie
 Dans l'éditeur, écrire un peu de vous.
 Écrire un message de commit qui décrit vos modifications.
 Cliquez sur Valider les modifications bouton.
+
+
+salut c pour tester la fonction git_commit
